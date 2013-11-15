@@ -1,4 +1,4 @@
 gridSDX
 =======
 
-Responsive grid framework.
+Responsive grid framework made in Stylus.

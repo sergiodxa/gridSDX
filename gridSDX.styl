@@ -1,0 +1,237 @@
+// --------------------------------------------- */
+//
+//	                 gridSDX
+//	Author: Sergio Daniel Xalambrí
+//	Author URL: http://xalambri.com.ar/
+//
+// --------------------------------------------- */
+
+// Configuration
+
+col33   = true //Availables col33 and col66 classes
+desktop = true //Available desktop classes
+fs      = 16px //Base font size
+mobile  = true //Available mobile classes
+tablet  = true //Available tablet classes
+
+// End configuration
+
+.contenedor
+	-webkit-box-sizing border-box
+	-moz-box-sizing border-box
+	box-sizing border-box
+	font-size 0
+.left
+	float left
+.right
+	float right
+
+if desktop
+	@media screen and (min-width: 1000px)
+		.d-col1
+		.d-col2
+		.d-col3
+		.d-col4
+		.d-col5
+		.d-col6
+		.d-col7
+		.d-col8
+		.d-col9
+		.d-col10
+		.d-col11
+		.d-col12
+		.d-col13
+		.d-col14
+		.d-col15
+		.d-col16
+		.d-col17
+		.d-col18
+		.d-col19
+		.d-col20
+			font-size fs
+			margin 0 .5%
+		.d-col1
+			width 4%
+		.d-col2
+			width 9%
+		.d-col3
+			width 14%
+		.d-col4
+			width 19%
+		.d-col5
+			width 24%
+		.d-col6
+			width 29%
+		.d-col7
+			width 34%
+		.d-col8
+			width 39%
+		.d-col9
+			width 44%
+		.d-col10
+			width 49%
+		.d-col11
+			width 54%
+		.d-col12
+			width 59%
+		.d-col13
+			width 64%
+		.d-col14
+			width 69%
+		.d-col15
+			width 74%
+		.d-col16
+			width 79%
+		.d-col17
+			width 84%
+		.d-col18
+			width 89%
+		.d-col19
+			width 94%
+		.d-col20
+			width 99%
+	if col33
+		.d-col33
+			width 32.33333%
+		.d-col66
+			width 65.33333%
+
+if tablet
+	@media screen and (max-width: 1000px) and (min-width: 640px)
+		.t-col1
+		.t-col2
+		.t-col3
+		.t-col4
+		.t-col5
+		.t-col6
+		.t-col7
+		.t-col8
+		.t-col9
+		.t-col10
+		.t-col11
+		.t-col12
+		.t-col13
+		.t-col14
+		.t-col15
+		.t-col16
+		.t-col17
+		.t-col18
+		.t-col19
+		.t-col20
+			font-size fs
+			margin 0 .5%
+		.t-col1
+			width 4%
+		.t-col2
+			width 9%
+		.t-col3
+			width 14%
+		.t-col4
+			width 19%
+		.t-col5
+			width 24%
+		.t-col6
+			width 29%
+		.t-col7
+			width 34%
+		.t-col8
+			width 39%
+		.t-col9
+			width 44%
+		.t-col10
+			width 49%
+		.t-col11
+			width 54%
+		.t-col12
+			width 59%
+		.t-col13
+			width 64%
+		.t-col14
+			width 69%
+		.t-col15
+			width 74%
+		.t-col16
+			width 79%
+		.t-col17
+			width 84%
+		.t-col18
+			width 89%
+		.t-col19
+			width 94%
+		.t-col20
+			width 99%
+	if col33
+		.t-col33
+			width 32.33333%
+		.t-col66
+			width 65.33333%
+
+if mobile
+	@media screen and (max-width: 640px)
+		.m-col1
+		.m-col2
+		.m-col3
+		.m-col4
+		.m-col5
+		.m-col6
+		.m-col7
+		.m-col8
+		.m-col9
+		.m-col10
+		.m-col11
+		.m-col12
+		.m-col13
+		.m-col14
+		.m-col15
+		.m-col16
+		.m-col17
+		.m-col18
+		.m-col19
+		.m-col20
+			font-size fs
+			margin 0 .5%
+		.m-col1
+			width 4%
+		.m-col2
+			width 9%
+		.m-col3
+			width 14%
+		.m-col4
+			width 19%
+		.m-col5
+			width 24%
+		.m-col6
+			width 29%
+		.m-col7
+			width 34%
+		.m-col8
+			width 39%
+		.m-col9
+			width 44%
+		.m-col10
+			width 49%
+		.m-col11
+			width 54%
+		.m-col12
+			width 59%
+		.m-col13
+			width 64%
+		.m-col14
+			width 69%
+		.m-col15
+			width 74%
+		.m-col16
+			width 79%
+		.m-col17
+			width 84%
+		.m-col18
+			width 89%
+		.m-col19
+			width 94%
+		.m-col20
+			width 99%
+	if col33
+		.m-col33
+			width 32.33333%
+		.m-col66
+			width 65.33333%
