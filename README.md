@@ -7,7 +7,7 @@ Author: Sergio Daniel Xalambrí
 
 Author URL: http://xalambri.com.ar/
 
-Version: 1.3
+Version: 1.3.1
 
 Documentation
 ======
