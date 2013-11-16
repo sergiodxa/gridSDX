@@ -1,8 +1,8 @@
-.contenedor {
+.container {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 0;
+  font-size: 0 !important;
 }
 .fixed {
   overflow: hidden;
@@ -33,7 +33,9 @@
   .d-col17,
   .d-col18,
   .d-col19,
-  .d-col20 {
+  .d-col20,
+  .d-col33,
+  .d-col66 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -242,7 +244,9 @@
   .t-col17,
   .t-col18,
   .t-col19,
-  .t-col20 {
+  .t-col20,
+  .t-col33,
+  .t-col66 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -451,7 +455,9 @@
   .m-col17,
   .m-col18,
   .m-col19,
-  .m-col20 {
+  .m-col20,
+  .m-col33,
+  .m-col66 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;

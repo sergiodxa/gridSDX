@@ -3,7 +3,7 @@
 //	                 gridSDX
 //	Author: Sergio Daniel Xalambrí
 //	Author URL: http://xalambri.com.ar/
-//	Version: 1.3.1
+//	Version: 1.3.2
 //
 // --------------------------------------------- */
 
@@ -29,9 +29,9 @@ boxsizing()
 	-moz-box-sizing border-box
 	box-sizing border-box
 
-.contenedor
+.container
 	boxsizing()
-	font-size 0
+	font-size 0 !important
 .fixed
 	overflow hidden
 .left
@@ -61,6 +61,8 @@ if desktop and !noMargin
 		.d-col18
 		.d-col19
 		.d-col20
+		.d-col33
+		.d-col66
 			boxsizing()
 			display inline-block
 			font-size fontSize
@@ -209,6 +211,8 @@ if tablet and !noMargin
 		.t-col18
 		.t-col19
 		.t-col20
+		.t-col33
+		.t-col66
 			boxsizing()
 			display inline-block
 			font-size fontSize
@@ -357,6 +361,8 @@ if mobile and !noMargin
 		.m-col18
 		.m-col19
 		.m-col20
+		.m-col33
+		.m-col66
 			boxsizing()
 			display inline-block
 			font-size fontSize
@@ -505,6 +511,8 @@ if desktop and noMargin
 		.d-col18
 		.d-col19
 		.d-col20
+		.d-col33
+		.d-col66
 			boxsizing()
 			display inline-block
 			font-size fontSize
@@ -652,6 +660,8 @@ if tablet and noMargin
 		.t-col18
 		.t-col19
 		.t-col20
+		.t-col33
+		.t-col66
 			boxsizing()
 			display inline-block
 			font-size fontSize
@@ -799,6 +809,8 @@ if mobile and noMargin
 		.m-col18
 		.m-col19
 		.m-col20
+		.m-col33
+		.m-col66
 			boxsizing()
 			display inline-block
 			font-size fontSize
@@ -945,6 +957,8 @@ if !desktop and !tablet and !mobile and !noMargin
 	.col18
 	.col19
 	.col20
+	.col33
+	.col66
 		boxsizing()
 		font-size fontSize
 		margin 0 .5%
@@ -1091,6 +1105,8 @@ if !desktop and !tablet and !mobile and noMargin
 	.col18
 	.col19
 	.col20
+	.col33
+	.col66
 		boxsizing()
 		display inline-block
 		font-size fontSize
