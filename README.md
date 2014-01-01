@@ -12,7 +12,7 @@ Version: 1.4.0
 Documentation
 ======
 
-Englis
+English
 =====
 For use this grid framework you need NodeJS and Stylus installed, once you have installed them you can use:
 
