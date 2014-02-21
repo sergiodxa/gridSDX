@@ -9,9 +9,9 @@
 	<title>gridSDX</title>
 	<link rel="author" href="humans.txt" type="text/plain" />
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="./lib/normalize.min.css">
-	<link rel="stylesheet" href="./static/css/grid.min.css">
-	<link rel="stylesheet" href="./static/css/estilos.min.css">
+	<link rel="stylesheet" href="./lib/normalize.min.css" />
+	<link rel="stylesheet" href="./static/css/grid.min.css" />
+	<link rel="stylesheet" href="./static/css/estilos.min.css" />
 </head>
 <body>
 	<header>
@@ -96,7 +96,7 @@
 			<ul>
 				<li><strong>.contenedor:</strong> esta clase sirve para definir el contenedor del sitio y limitar de esta forma el ancho máximo y centrarlo.</li>
 				<li><strong>.fila:</strong> esta clase indica cual elemento es una fila que contiene columnas.</li>
-				<li><strong>.col-X:</strong> esta clase que varía su valor en X dependiendo del ancho de la columna indica de que tamaño eun elemento.</li>
+				<li><strong>.col-X:</strong> esta clase que varía su valor en X dependiendo del ancho de la columna indica de que tamaño es un elemento.</li>
 			</ul>
 			<p>
 				Para poder utilizar el sistema lo primero es definir el contenedor del sitio (si no queremos que ocupe siempre el 100% del ancho), para hacerlo le agregamos a un elemento la clase <code>.contenedor</code> que centra al elemento, le da un ancho de 99% y un ancho máximo de 960px o 1200px dependiendo del ancho.
@@ -105,7 +105,7 @@
 				El siguiente paso es crear una fila, para esto le agregamos la clase <code>.fila</code> a un elemento, esto le quita al elemento el tamaño de fuente (para solucionar el problema del espacio entre columnas al usar inline-block) y oculta el contenido que sobresalga de la fila.
 			</p>
 			<p>
-				El último paso es colocar las columnas, para eso dentro de nuestra fila creamos varios elementos con clases <code>.col-X</code> donde en X colocamos el ancho de la columna a crear, todas las clases <code>.col-X</code> le vuelven a colocar el tamaño de fuente en base al del body, cambian el tipo de display a inline-block y alinea verticalmente la columna hacia arriba.
+				El último paso es colocar las columnas, para eso dentro de nuestra fila creamos varios elementos con clases <code>.col-X</code> donde en X colocamos el ancho de la columna a crear, todas las clases <code>.col-X</code> le vuelven a colocar el tamaño de fuente en base al del body, cambian el tipo de display a inline-block y alinean verticalmente la columna hacia arriba.
 			</p>
 			<p>
 				Los siguientes son los anchos posibles para las columnas, si necesitas utilizar más de 5 columnas podes combinarlas agregando la clase <code>.fila</code> a un elemento con una clase <code>.col-X</code> y dentro colocar más columnas.
@@ -124,6 +124,11 @@
 			</ul>
 		</article>
 	</section>
+	<footer>
+		<p>
+			Desarrollado por <a href="//twitter.com/sergiodxa" target="_blank" title="Mi cuenta de Twitter">@sergiodxa</a>
+		</p>
+	</footer>
 	<script src="./lib/modernizr.min.js"></script>
 	<script src="./lib/zepto.min.js"></script>
 	<script src="./app/main.min.js"></script>
