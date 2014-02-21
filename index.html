@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="author" content="Sergio Daniel Xalambrí" />
+	<meta name="description" content="Sistema de grillas responsive de Sergio Daniel Xalambrí" />
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
+	<title>gridSDX</title>
+	<link rel="author" href="humans.txt" type="text/plain" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="./lib/normalize.min.css">
+	<link rel="stylesheet" href="./static/css/grid.min.css">
+	<link rel="stylesheet" href="./static/css/estilos.min.css">
+</head>
+<body>
+	<header>
+		<nav class="menu-navegacion">
+			<ul class="fila">
+				<li class="desplegar-menu"><span class="icon-menu"></span></li>
+				<li class="col-33"><a href="#descargar">Descargar</a></li>
+				<li class="col-33"><a href="#demo">Demo</a></li>
+				<li class="col-33"><a href="#documentacion">Documentación</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="descargar" class="seccion">
+		<div class="grupo-titulos">
+			<h1 class="titulo">gridSDX</h1>
+			<h2 class="subtitulo">Sistema de grillas responsive</h2>
+		</div>
+		<a href="./static/css/grid.css" class="btn-descargar" target="_blank">Descargar</a>
+		<a href="./static/css/grid.min.css" class="link-descargar" target="_blank">Descargar archivo minificado</a>
+	</section>
+	<section id="demo" class="seccion">
+		<h3 class="titulo">Título</h3>
+		<p>
+			Este es un demo de como funcionan las columnas de gridSDX
+		</p>
+		<article class="scroll">
+			<div class="borde fila">
+				<div class="borde col-100">.col-100</div>
+			</div>
+			<div class="borde fila">
+				<div class="borde col-50">.col-50</div>
+				<div class="borde col-50">.col-50</div>
+			</div>
+			<div class="borde fila">
+				<div class="borde col-33">.col-33</div>
+				<div class="borde col-33">.col-33</div>
+				<div class="borde col-33">.col-33</div>
+			</div>
+			<div class="borde fila">
+				<div class="borde col-33">.col-33</div>
+				<div class="borde col-66">.col-66</div>
+			</div>
+			<div class="borde fila">
+				<div class="borde col-25">.col-25</div>
+				<div class="borde col-25">.col-25</div>
+				<div class="borde col-25">.col-25</div>
+				<div class="borde col-25">.col-25</div>
+			</div>
+			<div class="borde fila">
+				<div class="borde col-25">.col-25</div>
+				<div class="borde col-50">.col-50</div>
+				<div class="borde col-25">.col-25</div>
+			</div>
+			<div class="borde fila">
+				<div class="borde col-25">.col-25</div>
+				<div class="borde col-75">.col-75</div>
+			</div>
+			<div class="borde fila">
+				<div class="borde col-20">.col-20</div>
+				<div class="borde col-20">.col-20</div>
+				<div class="borde col-20">.col-20</div>
+				<div class="borde col-20">.col-20</div>
+				<div class="borde col-20">.col-20</div>
+			</div>
+			<div class="borde fila">
+				<div class="borde col-40">.col-40</div>
+				<div class="borde col-60">.col-60</div>
+			</div>
+			<div class="borde fila">
+				<div class="borde col-20">.col-20</div>
+				<div class="borde col-80">.col-80</div>
+			</div>
+		</article>
+		<article class="mensaje">
+			La resolución de tu dispositivo es menor a 640px por lo que todas las columnas se ven una debajo de otra debido al responsive, accede desde un dispositivo más grande para ver su funcionamiento.
+		</article>
+	</section>
+	<section id="documentacion" class="seccion">
+		<h3 class="titulo">Documentación</h3>
+		<article class="scroll">
+			<p>El sistema de grid cuentas con las siguientes clases:</p>
+			<ul>
+				<li><strong>.contenedor:</strong> esta clase sirve para definir el contenedor del sitio y limitar de esta forma el ancho máximo y centrarlo.</li>
+				<li><strong>.fila:</strong> esta clase indica cual elemento es una fila que contiene columnas.</li>
+				<li><strong>.col-X:</strong> esta clase que varía su valor en X dependiendo del ancho de la columna indica de que tamaño eun elemento.</li>
+			</ul>
+			<p>
+				Para poder utilizar el sistema lo primero es definir el contenedor del sitio (si no queremos que ocupe siempre el 100% del ancho), para hacerlo le agregamos a un elemento la clase <code>.contenedor</code> que centra al elemento, le da un ancho de 99% y un ancho máximo de 960px o 1200px dependiendo del ancho.
+			</p>
+			<p>
+				El siguiente paso es crear una fila, para esto le agregamos la clase <code>.fila</code> a un elemento, esto le quita al elemento el tamaño de fuente (para solucionar el problema del espacio entre columnas al usar inline-block) y oculta el contenido que sobresalga de la fila.
+			</p>
+			<p>
+				El último paso es colocar las columnas, para eso dentro de nuestra fila creamos varios elementos con clases <code>.col-X</code> donde en X colocamos el ancho de la columna a crear, todas las clases <code>.col-X</code> le vuelven a colocar el tamaño de fuente en base al del body, cambian el tipo de display a inline-block y alinea verticalmente la columna hacia arriba.
+			</p>
+			<p>
+				Los siguientes son los anchos posibles para las columnas, si necesitas utilizar más de 5 columnas podes combinarlas agregando la clase <code>.fila</code> a un elemento con una clase <code>.col-X</code> y dentro colocar más columnas.
+			</p>
+			<ul>
+				<li><code>.col-20</code></li>
+				<li><code>.col-25</code></li>
+				<li><code>.col-33</code></li>
+				<li><code>.col-40</code></li>
+				<li><code>.col-50</code></li>
+				<li><code>.col-60</code></li>
+				<li><code>.col-66</code></li>
+				<li><code>.col-75</code></li>
+				<li><code>.col-80</code></li>
+				<li><code>.col-100</code></li>
+			</ul>
+		</article>
+	</section>
+	<script src="./lib/modernizr.min.js"></script>
+	<script src="./lib/zepto.min.js"></script>
+	<script src="./app/main.min.js"></script>
+</body>
+</html>
