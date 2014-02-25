@@ -21,7 +21,7 @@ a:hover {
 body {
 	background	: #ECF0F1;
 	color		: #34495E;
-	font		: 16px 'Open Sans';
+	font		: 14px 'Open Sans';
 }
 footer,
 header {
@@ -32,14 +32,18 @@ header {
 	z-index		: 2;
 }
 footer {
-	bottom	: 0;
-	color	: #ECF0F1;
-	text-align: center;
+	bottom		: 0;
+	color		: #ECF0F1;
+	line-height	: 38px;
+	text-align	: center;
 }
 footer a:hover,
 .menu-navegacion a:hover,
 .menu-navegacion span:hover {
 	color	: #27AE60;
+}
+footer p {
+	margin	: 0;
 }
 h1,h2 {
 	margin	: 0;
@@ -158,18 +162,18 @@ header {
 }
 #demo .titulo,
 #documentacion .titulo {
-	font-size: 1.75em;
-	margin: 0;
+	font-size	: 1.75em;
+	margin		: 0;
 }
 #demo .borde {
 	border: 1px solid #3498DB;
 }
 #demo .fila {
-	margin-bottom: 5px;
+	margin-bottom	: 5px;
 }
 #demo [class*="col-"],#demo [class^=" col-"] {
-	text-align: center;
-	padding: .5em 0;
+	text-align	: center;
+	padding		: .5em 0;
 }
 #demo .scroll,
 #documentacion .scroll {
@@ -198,11 +202,11 @@ header {
 
 /* layout documentacion */
 #documentacion {
-	color: #ECF0F1;
+	color	: #ECF0F1;
 }
 #documentacion code {
-	font-style: italic;
-	font-weight: bold;
+	font-style	: italic;
+	font-weight	: bold;
 }
 #documentacion .scroll {
 	top			: 75px;
@@ -236,24 +240,24 @@ header {
 
 /* modulo scrollbar */
 ::-webkit-scrollbar {
-	width: 8px;
+	width	: 8px;
 }
 ::-webkit-scrollbar-track {
-	-webkit-box-shadow: #34495E;
-	-webkit-border-radius: 0;
-	border-radius: 0;
+	-webkit-box-shadow		: #34495E;
+	-webkit-border-radius	: 0;
+	border-radius			: 0;
 }
 ::-webkit-scrollbar-track-piece {
 	background-color: #34495E;
 }
 ::-webkit-scrollbar-thumb {
-	-webkit-border-radius: 0;
-	border-radius: 0;
-	background: #ECF0F1;
-	-webkit-box-shadow: inset 0 0 6px #BDC3C7;
+	-webkit-border-radius	: 0;
+	border-radius			: 0;
+	background				: #ECF0F1;
+	-webkit-box-shadow		: inset 0 0 6px #BDC3C7;
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: #ECF0F1;
+	background	: #ECF0F1;
 }
 
 /* media querys para responsive */
@@ -274,27 +278,27 @@ header {
 }
 @media screen and (max-width: 540px) {
 	#descargar .subtitulo {
-		font-size: 1.25rem;
+		font-size	: 1.25rem;
 	}
 }
 @media screen and (max-height: 330px) {
 	#demo .mensaje {
-		font-size: .9rem;
+		font-size	: .9rem;
 	}
 }
 @media screen and (max-height: 280px) {
 	#demo .mensaje {
-		font-size: .75rem;
+		font-size	: .75rem;
 	}
 }
 @media screen and (max-width: 430px) {
 	#descargar .subtitulo {
-		font-size: 1.125rem;
+		font-size	: 1.125rem;
 	}
 }
 @media screen and (max-width: 375px) {
 	#descargar .subtitulo {
-		font-size: 1rem;
+		font-size	: 1rem;
 	}
 }
 @media screen and (max-width: 320px) {
