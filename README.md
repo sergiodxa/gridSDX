@@ -1,4 +1,5 @@
 # gridSDX
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 Sistema de grillas responsive.
 
